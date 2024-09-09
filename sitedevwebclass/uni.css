@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+
+
+
+body{
+        color: white;
+            background-color: rgb(15, 2, 29);
+        }
+
+a{
+    color: white;
+    text-decoration: none; 
+    margin-right: 15px;
+}
+
+.menu{
+    text-align: right;
+    padding-top: 30px;
+    
+}
+
+
+
+
+header img{
+    width: 900px;
+    height:400px;
+   
+}
+
+.center{
+    text-align: center;
+}
+
+.logo{
+    text-align: center;
+}
