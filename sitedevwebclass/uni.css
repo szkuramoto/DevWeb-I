@@ -6,12 +6,45 @@
 }
 
 
+/*arrumar hover para cada item no menu ao invés de todos ao mesmo tempo*/
+
+.menu:hover {
+    text-align: right;
+    padding-top: 30px;
+    text-decoration: underline;
+    color: rgb(176, 0, 153);
+    
+
+} 
+
+
+/*as img estão bugando, logoqcapa está como "background" do texto, corrigir isso*/
+img {
+    text-align: center;
+    margin: 80px 70px 70px 80px;
+
+}
+
+.capalogo {
+    text-align: left;
+    width: 80px;
+    height: 60px;
+}
+
+.logoqueehcapa {
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    
+}
 
 
 body{
-        color: white;
-            background-color: rgb(15, 2, 29);
-        }
+
+    color: white;
+    background-color: rgb(15, 2, 29);
+      }
+
 
 a{
     color: white;
@@ -25,8 +58,23 @@ a{
     
 }
 
+.sobreuni{
+    text-align: center;
+    margin: 80px 0;
+    padding-top: 150px;;
+}
 
+.quemsomos{
+    text-align: center;
+    margin: 80px 100px;
+    padding-top: 15px;
+}
 
+.fivereasons{
+    text-align: center;
+    margin: 80px 0;
+    padding-top: 15px;
+}
 
 header img{
     width: 900px;
@@ -35,9 +83,5 @@ header img{
 }
 
 .center{
-    text-align: center;
-}
-
-.logo{
     text-align: center;
 }
