@@ -17,7 +17,7 @@ body {
 
 .wrapper {
     width: 420px;
-    background: purple;
+    background: rgb(66, 0, 128);
     border: 2px solid rgba(255,255, 255, .2);
     backdrop-filter: blur (18px);
     box-shadow: 0 0 10px rgba(0,0,0,.2);
@@ -107,4 +107,9 @@ body {
 
 .register-link p a:hover {
     text-decoration: underline;
+}
+
+.footer{
+    font-size: 12.5px;
+    text-align: center;
 }
