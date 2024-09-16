@@ -6,82 +6,111 @@
 }
 
 
-/*arrumar hover para cada item no menu ao invés de todos ao mesmo tempo*/
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-.menu:hover {
-    text-align: right;
-    padding-top: 30px;
-    text-decoration: underline;
-    color: rgb(176, 0, 153);
-    
+header.logo {
+    position: relative;
+    max-width: 150px;
+}
 
-} 
+header .navegation ul {
+    position: relative;
+    display: flex;
+}
 
+header .navegation li {
+    list-style: none;
+}
 
-/*as img estão bugando, logoqcapa está como "background" do texto, corrigir isso*/
-img {
+header .navegation li a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: 80px;
+}
+
+.container{
     text-align: center;
-    margin: 80px 70px 70px 80px;
+    padding: 20px;
+    margin-top: 30px;
 
 }
 
-.capalogo {
-    text-align: left;
-    width: 80px;
-    height: 60px;
+.container .text {
+   
+  max-width: 600px;
+  margin: 0 auto;
+ 
 }
+
+.container .text h2{
+    color:#fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 2.5px;
+    font-weight: 3.5px;
+    font-style: italic;
+}
+
+.container .text p{
+    color:#fff;
+}
+
+.container .text a{
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 25px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.container .text a:hover{
+    transform: translateY(-10px);
+}
+
 
 .logoqueehcapa {
+    width: 120px;
+    height: 200px;
+    margin: 120px auto 20px;
     text-align: center;
-    width: 200px;
-    height: 300px;
-    
-}
+   object-fit: cover;
+}   
+
 
 
 body{
 
     color: white;
     background-color: rgb(15, 2, 29);
-      }
+    padding-top: 120px;
+ }
 
-
-a{
-    color: white;
-    text-decoration: none; 
-    margin-right: 15px;
-}
-
-.menu{
-    text-align: right;
-    padding-top: 30px;
-    
-}
-
-.sobreuni{
-    text-align: center;
-    margin: 80px 0;
-    padding-top: 150px;;
-}
-
-.quemsomos{
-    text-align: center;
-    margin: 80px 100px;
-    padding-top: 15px;
-}
-
-.fivereasons{
-    text-align: center;
-    margin: 80px 0;
-    padding-top: 15px;
-}
-
-header img{
-    width: 900px;
-    height:400px;
-   
-}
 
 .center{
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 1100px;
+   margin: 0 auto;
+}
+
+footer{
     text-align: center;
+    margin: 20px auto;
 }
