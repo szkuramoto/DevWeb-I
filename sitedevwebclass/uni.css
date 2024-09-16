@@ -111,6 +111,10 @@ body{
 }
 
 footer{
-    text-align: center;
-    margin: 20px auto;
+      text-align: center;
+    font-size: 14px;
+    padding: 23px 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-style: italic;
 }
