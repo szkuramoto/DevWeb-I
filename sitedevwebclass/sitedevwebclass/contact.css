@@ -5,25 +5,64 @@
     font-family: Verdana, sans-serif;
 }
 
-body {
+
+header{
+    position: relative;
+    width: 100%;
+    padding: 20px 100px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: url('purpleweewee.jpg') no-repeat;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .logo {
+   
+    max-width: 100%;
+}
+
+header .navegation ul {
+    gap: 20px;
+    display: flex;
+}
+
+header .navegation li {
+    list-style: none;
+    margin: 0;
+}
+
+header .navegation li a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 18px;
+    
+}
+
+header .navegation li a:hover{
+    text-decoration: underline;
+}
+
+
+body {
+    background-color : rgb(15, 2, 29);
     background-size: cover;
     background-position: center;
+    margin: 0;
 }
 
 .wrapper {
     width: 420px;
-    background: rgb(66, 0, 128);
+    background: rgb(73, 12, 114);
     border: 2px solid rgba(255,255, 255, .2);
-    backdrop-filter: blur (18px);
+    backdrop-filter: blur(18px);
     box-shadow: 0 0 10px rgba(0,0,0,.2);
     color: #fff;
     border-radius: 10px;
     padding: 25px 30px;
+    margin: 20px auto 40px;
 }
 
 .wrapper h1{
@@ -109,7 +148,11 @@ body {
     text-decoration: underline;
 }
 
-.footer{
-    font-size: 12.5px;
+.footerstl {
     text-align: center;
+    font-size: 14px;
+    padding: 20px 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-style: italic;
 }
