@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Para que o cabeçalho e rodapé fiquem em coluna */
+}
+
+.header {
+    background-color: #4b0081;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.layout {
+    display: flex; /* Adiciona Flexbox para o layout */
+}
+
+aside {
+    background-color: #6d00a1;
+    padding: 10px;
+    width: 200px; /* Largura fixa da barra lateral */
+    height: 450px;
+}
+
+.content {
+    background-color: #9032bb;
+    flex: 1; /* Ocupa o restante do espaço disponível */
+    padding: 10px;
+}
+
+footer {
+    background-color: #4b0081;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+}
+
+
+
+
+
+

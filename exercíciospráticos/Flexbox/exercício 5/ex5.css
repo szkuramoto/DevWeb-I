@@ -1,0 +1,33 @@
+.tabela-preco {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que os planos se ajustem */
+    padding: 20px;
+}
+
+.plano {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+}
+
+.plano-basico {
+    background-color: yellowgreen;
+}
+
+.plano-padrao {
+    background-color: #4b0081;
+}
+
+.plano-premium {
+    background-color: #e368ff;
+}
+
+@media (max-width: 600px) {
+    .plano {
+        flex: 100%; /* Cada plano ocupa 100% da largura */
+    }
+}

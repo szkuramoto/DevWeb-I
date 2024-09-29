@@ -1,0 +1,23 @@
+.galeria {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens se ajustem */
+    justify-content: space-between;
+}
+
+.galeria img {
+    width: 32%; /* Aproximadamente 3 colunas */
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .galeria img {
+        width: 48%; /* Aproximadamente 2 colunas */
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria img {
+        width: 100%; /* Uma coluna */
+    }
+}
+
