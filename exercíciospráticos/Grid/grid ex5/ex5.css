@@ -1,0 +1,37 @@
+.layout {
+    display: grid;
+    grid-template-columns: 20% 60% 20%; /* Navegação e sidebar com 20%, conteúdo com 60% */
+    grid-template-rows: auto 1fr auto; /* Cabeçalho e rodapé com altura automática */
+    gap: 20px;
+    height: 100vh; /*Para preencher altura da tela*/
+}
+
+.cabecalho {
+    grid-column: 1 / -1; /* Ocupar toda a largura */
+    background-color: yellow;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav {
+    background-color: yellowgreen;
+    padding: 20px;
+}
+
+.conteudo {
+    background-color: purple;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: yellowgreen;
+    padding: 20px;
+}
+
+.footer {
+    grid-column: 1 / -1; /* Ocupar toda a largura */
+    background-color: yellow;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px; /*Adiciona espaço acima do rodapé*/
+}

@@ -1,0 +1,30 @@
+.layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas iguais */
+    grid-template-rows: auto 100px; /* Altura automática para as colunas e 100px para o rodapé */
+}
+
+.coluna1 {
+    background-color:  purple;
+    padding: 200px;
+    text-align: center;
+}
+
+.coluna2 {
+    background-color:  yellowgreen;
+    padding: 220px;
+    text-align: center;
+}
+
+.coluna3 {
+    background-color: pink;
+    padding: 200px;
+    text-align: center;
+}
+
+.footer {
+    grid-column: 1 / -1; /* Ocupar toda a largura */
+    background-color: palevioletred;
+    padding: 10px;
+    text-align: center;
+}

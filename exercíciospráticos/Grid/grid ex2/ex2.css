@@ -1,0 +1,24 @@
+
+/*exercício 2*/
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+    grid-template-rows: auto; /* Altura automática para o cabeçalho */
+}
+
+.cabecalho {
+    grid-column: 1 / -1; /* Ocupar toda a largura */
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+}
+
+.coluna1 {
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.coluna2 {
+    background-color: violet; 
+    padding: 20px;
+}

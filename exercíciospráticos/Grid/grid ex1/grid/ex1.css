@@ -1,0 +1,14 @@
+.layout {
+    display: grid;
+    grid-template-columns: 70% 30%; /* 70% para a primeira coluna e 30% para a segunda */
+}
+
+.coluna1 {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.coluna2 {
+    background-color: lightpink;
+    padding: 20px;
+}

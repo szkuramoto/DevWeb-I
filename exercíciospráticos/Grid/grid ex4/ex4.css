@@ -1,0 +1,14 @@
+.layout {
+    display: grid;
+    grid-template-columns: 25% 1fr; /* Sidebar com 25% e conteúdo com 75% */
+}
+
+.sidebar {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.conteudo {
+    background-color: lightcoral;
+    padding: 20px;
+}
