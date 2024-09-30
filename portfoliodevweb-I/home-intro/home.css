@@ -5,6 +5,8 @@
     text-decoration: none;
     border: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+
 }
 
 html{
@@ -62,7 +64,183 @@ nav a:active{
 }
 
 @media(max-width:995px){
-    nav
-    position:absolute;
-    top
+    nav{
+     position:absolute;
+     display: none;
+     top: 100%;
+     right:0;
+     width: 40%;
+     border-left: 3pxsolid #821ab1;
+     border-bottom: 3px solid #821ab1;
+     border-bottom-left-radius: 2rem;
+     padding: 1rem solid;
+     background-color: #4b0081;
+     border-top: 0.1rem solid rgb(0, 0, 0.1)
+     }
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav ul:hover,
+    nav ul.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #821ab1;
+    }
+
+    section{
+        min-width: flex;
+        padding: 5rem 9% 5rem;
+    }
+
+    .home{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap: 8rem;
+        background-color: black;
+    }
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+spam{
+    color:#821ab1;
+}
+
+.home-content h3{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #821ab1;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin-top: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #821ab1;
+}
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #821ab1;
+    box-shadow: 0 0.25px #821ab1;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #821ab1;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #821ab1;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #821ab1;
+    color: black;
+    box-shadow: 0 0 25px #821ab1;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "Desenvolvedor Front-End Iniciante";
+    color: #821ab1;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #821ab1;
+    }
+}
+
+@keyframes words{
+    0% 50%{
+    content:"Desenvolvedor Front-End Iniciante";
+    }
+    51% 100%{
+        content:"Begginer Front-End Developer"
+    }
+}
+
+@media(max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;;
+    }
+}
+
+.home .home-content h3{
+    font-size: 2.5rem;
+}
+
+.home-content h1{
+    font-size: 5rem;
+}
+
+.home-img img{
+    width: 70vh;
+    margin-top:4rem;
 }
