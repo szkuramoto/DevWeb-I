@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Exercício 1</title>
+
+    <!--link linkado ao bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<!-- Crie uma página com um navbar e três seções: sobre, serviços e Contato, utilizando a grade do Bootstrap para organizar o layout.   -->
+
+
+<body>
+    
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Barra de navegação -->
+            <a class="navbar-brand" href="#">Bootstrap Exercício 1</a> <!-- Nome da página -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> <!-- Ícone que aparece em telas menores -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav"> <!-- Colapso da navbar em telas menores -->
+                <ul class="navbar-nav"> <!-- Lista de itens da navbar -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a> <!-- Link para a seção "Sobre" -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a> <!-- Link para a seção "Serviços" -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a> <!-- Link para a seção "Contato" -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- Seções -->
+        <div class="container mt-5"> <!-- Container para as seções, com margem superior -->
+            <div id="sobre" class="row"> <!-- Seção "Sobre" -->
+                <div class="col"> <!-- Coluna que ocupa todo o espaço disponível -->
+                    <h2>Sobre</h2> <!-- Título da seção -->
+                    <p>Informações sobre a nossa empresa.</p> <!-- Texto da seção -->
+                </div>
+            </div>
+            <div id="servicos" class="row mt-4"> <!-- Seção "Serviços" com margem superior -->
+                <div class="col"> <!-- Coluna que ocupa todo o espaço disponível -->
+                    <h2>Serviços</h2> <!-- Título da seção -->
+                    <p>Detalhes sobre os serviços que oferecemos.</p> <!-- Texto da seção -->
+                </div>
+            </div>
+            <div id="contato" class="row mt-4"> <!-- Seção "Contato" com margem superior -->
+                <div class="col"> <!-- Coluna que ocupa todo o espaço disponível -->
+                    <h2>Contato</h2> <!-- Título da seção -->
+                    <p>Informações de contato.</p> <!-- Texto da seção -->
+                </div>
+            </div>
+        </div>
+    
+        <!-- Scripts necessários para o funcionamento do Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> <!-- Popper.js para tooltip e popovers -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- JS do Bootstrap -->
+    </body>
+    </html>
+    
+   
+    
+
+
+    
+</body>
+</html>
