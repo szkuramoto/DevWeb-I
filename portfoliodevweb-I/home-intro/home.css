@@ -211,13 +211,23 @@ spam{
 }
 
 @keyframes words{
-    0% 50%{
-    content:"Desenvolvedor Front-End Iniciante";
+        0% {
+            content: "Desenvolvedor Front-End Iniciante";
+        }
+        50% {
+            content: "Desenvolvedor Front-End Iniciante";
+        }
+        51% {
+            content: "Begginer Front-End Developer";
+        }
+        100% {
+            content: "Begginer Front-End Developer";
+        }
     }
-    51% 100%{
-        content:"Begginer Front-End Developer"
-    }
-}
+    
+
+
+
 
 @media(max-width: 1000px){
     .home{
