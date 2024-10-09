@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Exercício 3</title>
 
-<link rel="stylesheet" href="exbt3.css">
+  <!-- add o css do bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
@@ -13,5 +14,57 @@
 
 <body>
     
+    <div class="container mt-5"> <!-- container do bootstrap para centralizar o conteúdo -->
+        <h2>Formulário de Contato</h2> 
+        
+        <form id="contactForm" class="needs-validation" novalidate> <!-- formulário com validação -->
+            <div class="form-group"> <!-- agrupa os  elementos do formulário -->
+                <label for="name">Nome:</label> <!-- rótulo -->
+                <input type="text" class="form-control" id="name" required> <!-- entrada para o nome -->
+                <div class="invalid-feedback">Por favor, insira seu nome.</div> <!-- mensagem de erro se o campo não for preenchido -->
+            </div>
+            
+            <div class="form-group"> <!-- agrupamento para o campo de email -->
+                <label for="email">Email:</label> <!-- rótulo  -->
+                <input type="email" class="form-control" id="email" required> <!-- campo de entrada para o email -->
+                <div class="invalid-feedback">Por favor, insira um email válido.</div> <!-- mensagem de erro se o email não for válido -->
+            </div>
+            
+            <div class="form-group"> <!-- agrupa para  mensagem -->
+                <label for="message">Mensagem:</label> 
+                <textarea class="form-control" id="message" rows="3" required></textarea> <!-- campo de texto para a mensagem -->
+                <div class="invalid-feedback">Por favor, escreva uma mensagem.</div> 
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Enviar</button> <!-- button para enviar o formulário -->
+        </form>
+    </div>
+    
+    <!-- inclui jQuery e Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        // função de validação do formulário
+        (function () {
+            'use strict' // 'strict mode' para evitar erros comuns
+            var forms = document.querySelectorAll('.needs-validation') // seleciona todos os formulários com a classe 'needs-validation'
+    
+            // itera sobre cada formulário
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    // adiciona um evento ao envio do formulário
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) { // verifica se o formulário é válido
+                            event.preventDefault() // impede o envio se não for válido
+                            event.stopPropagation() // impede a propagação do evento
+                        }
+                        form.classList.add('was-validated') // adiciona a classe 'was-validated' para mostrar os feedbacks
+                    }, false)
+                })
+        })()
+    </script>
+     
 </body>
 </html>
