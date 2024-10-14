@@ -213,6 +213,11 @@ line-height: 1.3;
 
 .habilidades-box img {
     width: 100%;
+    transition: 0.5s ease;
+}
+
+.habilidades-box img:hover {
+    transform: scale(1.1);
 }
 
 /* ~~~~~button ~~~~*/
