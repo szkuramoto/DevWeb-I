@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    height: 200vh; /* Para permitir rolagem */
+}
+
+.floating-icons {
+    position: relative; /* Para posicionar os ícones dentro deste contêiner */
+}
+
+.floating-icon {
+    position: fixed;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.floating-icon:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+}

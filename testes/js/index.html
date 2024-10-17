@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ícones Flutuantes</title>
+    <link rel="stylesheet" href="/testes/css/style.css">
+</head>
+<body>
+    <div class="floating-icons">
+        <!-- Criando 21 ícones -->
+        ${Array.from({ length: 21 }, (_, i) => `<div class="floating-icon" id="icon-${i}">🌟</div>`).join('')}
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

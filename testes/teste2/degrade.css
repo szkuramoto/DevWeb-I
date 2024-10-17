@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gradient-bar {
+    width: 80%; /* Largura da barra */
+    height: 30px; /* Altura da barra */
+    background: linear-gradient(to right, #ce3eeb, yellow); /* Gradiente */
+    border-radius: 15px; /* Arredondar as bordas */
+}
