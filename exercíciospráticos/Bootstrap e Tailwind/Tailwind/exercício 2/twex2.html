@@ -5,13 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Exercício 2</title>
 
-    <link rel="stylesheet" href="twex2.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
 </head>
 
 <!-- Desenvolva um formulário de login estilizado apenas com classes do Tailwind CSS.  -->
 
 <body>
+
+
+    <body class="bg-gray-100 flex items-center justify-center h-screen">
     
-</body>
-</html>
+    <div class="bg-white p-8 rounded-lg shadow-md w-96">
+        <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+        <form>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                    E-mail
+                </label>
+                <input
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-500"
+                    id="email" type="email" placeholder="seu-email@exemplo.com" required>
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="senha">
+                    Senha
+                </label>
+                <input
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-blue-500"
+                    id="senha" type="password" placeholder="Sua senha" required>
+            </div>
+            <div class="flex items-center justify-between">
+                <button
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="submit">
+                    Entrar
+                </button>
+            </div>
+            <div class="mt-4 text-center">
+                <a href="#" class="text-blue-500 hover:underline">Esqueceu a senha?</a>
+            </div>
+        </form>
+    </div>
+    
+    </body>
+    </html>
+    
+
+<!--
+    
+Container do Formulário: Um <div> com fundo branco, padding, bordas arredondadas e sombra para dar destaque.
+    
+Cabeçalho: Um título centralizado.
+
+Inputs: Cada campo tem um label e um input estilizado com bordas, sombras e foco destacado.
+
+Botão: Um botão estilizado que muda de cor ao passar o mouse.
+
+Link de Esqueci a Senha: Um link que aparece abaixo do botão.
+
+
+-->
