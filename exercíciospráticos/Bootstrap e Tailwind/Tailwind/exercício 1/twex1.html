@@ -5,13 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Exercício 1</title>
 
-    <link rel="stylesheet" href="twex1.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
 </head>
 
 <!--Crie um layout com duas colunas: uma coluna com um menu lateral e outra com o conteúdo principal.   -->
 
-<body>
-    
+<body class="bg-gray-100">
+
+<div class="flex">
+    <!-- Menu Lateral -->
+    <div class="w-1/4 bg-white p-5 shadow-md">
+        <h2 class="text-xl font-bold mb-4">Menu</h2>
+        <ul>
+            <li class="mb-2"><a href="#" class="text-blue-600">Item 1</a></li>
+            <li class="mb-2"><a href="#" class="text-blue-600">Item 2</a></li>
+            <li class="mb-2"><a href="#" class="text-blue-600">Item 3</a></li>
+            <li class="mb-2"><a href="#" class="text-blue-600">Item 4</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="w-3/4 p-5">
+        <h1 class="text-2xl font-bold mb-4">Conteúdo Principal</h1>
+        <p>Aqui está o conteúdo principal da página.</p>
+    </div>
+</div>
+
 </body>
 </html>
+
+<!--
+
+Container Flex: O <div class="flex"> faz com que os filhos (menu e conteúdo) sejam dispostos em linha.
+
+Menu Lateral: O menu ocupa 1/4 da largura da tela (w-1/4), tem um fundo branco e um pouco de sombra.
+
+Conteúdo Principal: O conteúdo ocupa 3/4 da largura (w-3/4) e tem algum padding para espaçamento.
+
+-->
