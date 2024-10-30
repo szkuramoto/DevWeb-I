@@ -1,0 +1,47 @@
+.title-filtros {
+    display: flex; /* Alinha título e filtros em linha */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaça os elementos */
+    margin-left: 100px; /* Margem à esquerda */
+    margin-top: 18px; /* Espaço acima */
+}
+
+.title-container {
+    display: flex; /* Alinha o ícone, o título e as estrelas em linha */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.title h2 {
+    color: #25345f;
+    font-size: 36px;
+    font-style: italic;
+    margin: 0 18px; /* Espaço entre o ícone e o título */
+}
+
+.title-container i {
+    font-size: 7rem; 
+    margin-left: 80px;
+}
+
+.icon-star {
+    display: flex; /* Garante que as estrelas fiquem em linha */
+    align-items: center; /* Alinha verticalmente as estrelas */
+    margin-left: 20px; /* Ajuste conforme necessário */
+}
+
+.icon-star i {
+    color: rgb(130, 2, 152); /* COR TESTE */
+    font-size: 42px;
+    margin-left: 15px;
+}
+
+.filtros-container {
+    display: flex; /* Garante que os filtros fiquem em linha */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.filtrosbtn {
+    display: flex;
+    align-items: center; /* Alinha o ícone e o botão no centro */
+    margin-left: 30px; /* Espaço entre os botões */
+}

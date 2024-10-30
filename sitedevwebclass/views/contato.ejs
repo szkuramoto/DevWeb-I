@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lista de Contatos</title>
+</head>
+<body>
+<h1>Lista de Contatos</h1>
+<table>
+<tr>
+<th>ID</th>
+<th>Nome</th>
+<th>Telefone</th>
+<th>Email</th>
+</tr>
+<% contatos.forEach(contact => { %>
+<tr>
+<td><%= contact.id %></td>
+<td><%= contact.nome %></td>
+<td><%= contact.telefone %></td>
+<td><%= contact.email %></td>
+</tr>
+<% }) %>
+</table>
+</body>
+</html>

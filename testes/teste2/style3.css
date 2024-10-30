@@ -1,0 +1,59 @@
+.comments {
+    display: flex;
+    justify-content: space-between; /* Espaça as laterais e o centro */
+    align-items: flex-start; /* Alinha os itens no topo */
+    min-height: 100vh; /* Garante que a seção ocupe a altura total da tela */
+    background: linear-gradient(to right, #90639E, #9AAECE);
+    padding: 20px 0; /* Espaçamento superior e inferior */
+}
+
+.left-sidebar, .right-sidebar {
+    width: 20%; /* Largura das laterais */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza as imagens */
+}
+
+.comments-container {
+    display: flex;
+    flex-direction: column; /* Coloca as caixas em coluna */
+    align-items: center; /* Centraliza as caixas */
+    gap: 20px; /* Espaçamento entre as caixas */
+    width: 60%; /* Largura central */
+}
+
+.comments-box {
+    color: white; /* Cor do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    width: 300px; /* Largura fixa das caixas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    background: linear-gradient(to right, #90639E, #9AAECE);
+}
+
+.icon-left, .icon-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; /* Espaçamento entre ícones */
+}
+
+.imgvereador {
+    position: relative;
+    height: 130px;
+    width: 130px;
+    overflow: hidden; /* Para garantir que a imagem não ultrapasse o limite */
+    border: 6px solid transparent;   
+    background: linear-gradient(to right, #ce3eeb, yellow) padding-box, linear-gradient(to right, #ce3eeb, yellow) border-box; 
+    border-radius: 50%;
+}
+
+.imgvereador img {
+    width: 100%; /* Ajusta a imagem para preencher o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.caption {
+    text-align: center;
+    margin-top: 5px; /* Espaçamento acima da legenda */
+}

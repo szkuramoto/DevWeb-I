@@ -12,3 +12,31 @@ body {
     background: linear-gradient(to right, #ce3eeb, yellow); /* Gradiente */
     border-radius: 15px; /* Arredondar as bordas */
 }
+
+
+/*  ===== teste colunas zigue-zague   ====    */
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-column img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: 100px; /* Ajuste o tamanho conforme necessário */
+}
+
+.right-column img {
+    border-radius: 50%;
+    margin-top: 20px;
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: 100px; /* Ajuste o tamanho conforme necessário */
+}
