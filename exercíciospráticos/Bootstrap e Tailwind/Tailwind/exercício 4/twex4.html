@@ -5,13 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Exercício 4</title>
 
-    <link rel="stylesheet" href="twex4.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 
 </head>
 
 <!-- Utilize o sistema de flexbox do Tailwind para criar uma barra de navegação responsiva.   -->
 
 <body>
+
+
+    <header class="bg-gray-900 text-white">
+        <nav class="flex items-center justify-between p-4">
+          <!-- Logo -->
+          <a href="#" class="text-3xl font-bold text-red-600">BLAST</a>
+      
+          <!-- Links de Navegação -->
+          <div class="hidden md:flex space-x-6">
+            <a href="#" class="hover:text-red-600 transition">Home</a>
+            <a href="#" class="hover:text-red-600 transition">Sobre</a>
+            <a href="#" class="hover:text-red-600 transition">Personagens</a>
+            <a href="#" class="hover:text-red-600 transition">Contato</a>
+          </div>
+      
+          <!-- Menu Hamburguer (para telas pequenas) -->
+          <button class="md:hidden text-3xl" id="menuButton">
+            &#9776;
+          </button>
+        </nav>
+      
+        <!-- Menu Drop-Down (para telas pequenas) -->
+        <div class="hidden md:hidden bg-gray-800 text-white" id="menuDropdown">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-700">Sobre</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-700">Personagens</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-700">Contato</a>
+        </div>
+      </header>
+      
+      <!-- Script para mostrar e esconder o menu hamburguer -->
+      <script>
+        const menuButton = document.getElementById('menuButton');
+        const menuDropdown = document.getElementById('menuDropdown');
+      
+        menuButton.addEventListener('click', () => {
+          menuDropdown.classList.toggle('hidden');
+        });
+      </script>
+      
+
     
 </body>
 </html>
+
+<!--
+Estrutura Flexbox:
+
+A classe flex na tag <nav> faz com que os itens dentro dela sejam dispostos de forma flexível, permitindo que a logo e os links se alinhem de forma responsiva.
+A classe justify-between garante que os itens (logo e links) fiquem bem espaçados, com a logo à esquerda e os links à direita (ou, no caso de telas pequenas, o menu hamburguer aparece).
+A classe items-center alinha verticalmente os itens ao centro, para que fiquem alinhados na mesma linha.
+Links de Navegação:
+
+Os links de navegação têm as classes hover:text-red-600 e transition para adicionar um efeito de hover com a cor vermelha (tema de Nana) e uma transição suave.
+A classe hidden md:flex faz com que esses links fiquem visíveis apenas em telas médias (ou maiores). Em telas pequenas, eles serão escondidos, e o menu hamburguer será exibido.
+Menu Hamburguer:
+
+Em telas pequenas, o botão hamburguer (representado pelo &#9776;) é exibido com a classe md:hidden.
+Quando o usuário clicar no botão hamburguer, o script (que está no final do código) vai alternar a visibilidade do menu dropdown, mostrando ou escondendo as opções de navegação.
+Menu Dropdown:
+
+O menu dropdown com as opções de navegação só é visível em telas pequenas (e escondido com hidden por padrão). Ele aparece quando o botão hamburguer é clicado.
+A classe hover:bg-gray-700 muda a cor de fundo para um tom de cinza mais escuro quando o usuário passa o mouse sobre as opções.
+-->

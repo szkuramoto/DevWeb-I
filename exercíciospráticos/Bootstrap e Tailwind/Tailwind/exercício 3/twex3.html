@@ -5,13 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Exercício 3</title>
 
-    <link rel="stylesheet" href="twex3.css">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
 </head>
 
 <!-- Crie um card de perfil com imagem, nome e uma breve descrição utilizando utilitários do Tailwind.  -->
 
 <body>
-    
+
+
+    <div class="max-w-sm mx-auto bg-gray-900 border border-gray-700 rounded-lg shadow-lg">
+
+
+        <!-- card 1-->
+         <!-- Imagem -->
+  <img class="w-full h-48 object-contain rounded-t-lg" src="/Atividade2DevWeb/img/nanamic.jpg" alt="Imagem de Perfil">
+      
+        <!-- Conteúdo do Card -->
+        <div class="p-4">
+          <!-- Nome -->
+          <h2 class="text-3xl font-bold text-red-600">Nana Osaki</h2>
+          <!-- Descrição -->
+          <p class="text-gray-300 mt-2">Vocalista da banda BLAST, com uma atitude feroz e apaixonada pela música. Sempre em busca de ser a estrela do rock.</p>
+      
+          <!-- Botão -->
+          <button class="mt-4 px-4 py-2 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition duration-200">
+            Ver Perfil
+          </button>
+        </div>
+
+
+
+        
+
+
+
+      </div>
+      
 </body>
 </html>
+
+<!--
+bg-gray-900: O fundo do card foi mudado para um cinza muito escuro (quase preto), combinando com a estética "dark" de Nana.
+
+border border-gray-700: A borda também é de um cinza escuro, para criar um contraste mais suave.
+
+text-red-600: Usei um tom de vermelho forte para o nome, que é uma cor associada diretamente ao estilo da Nana Osaki.
+
+text-gray-300: A descrição foi ajustada para um cinza claro, para manter a legibilidade sobre o fundo escuro, sem brigar com o estilo.
+
+bg-red-600: O botão foi configurado com um fundo vermelho (para seguir o tema da Nana), e a cor de texto foi alterada para branco para garantir contraste e legibilidade.
+
+hover:bg-red-700: O botão muda para um tom mais escuro de vermelho quando o usuário passa o mouse, criando uma interação mais interessante.
+
+shadow-lg: A sombra foi aumentada para dar um efeito mais "forte" ao card, como se estivesse flutuando, o que também dá mais destaque.
+-->

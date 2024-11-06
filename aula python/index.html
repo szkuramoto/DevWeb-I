@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <header>
+        <!--exemplo de como chamar imagem por flask-->
+        <img scr="{{url_for('static', filename='./imagens/capa.png')}}">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/contato">Contato</a>
+            <a href="/quemsomos">Quem Somos</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+    </main>
+    
+</body>
+</html>
