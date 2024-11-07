@@ -170,7 +170,7 @@
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/Atividade2DevWeb/img/uni1.jpg" alt="uni 1" class="d-block w-100">
+                <img src="/testes/teste2/img/chococat.jpg" alt="uni 1" class="d-block w-100">
             </div>
             <div class="carousel-item">
                 <img src="/Atividade2DevWeb/img/uni2.jpg" alt="uni 2" class="d-block w-100">
@@ -195,7 +195,7 @@
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="/Atividade2DevWeb/img/uni4.jpg" class="card-img-top" alt="Vestibular Uni">
+                    <img src="/testes/teste2/img/chococat.jpg" class="card-img-top" alt="Vestibular Uni">
                     <div class="card-body">
                         <h5 class="card-title">Vestibular Uni</h5>
                         <p class="card-text">Entre por meio dos nossos vestibulares.</p>
@@ -217,4 +217,169 @@
                 <div class="card">
                     <img src="/Atividade2DevWeb/img/uni5.jpg" class="card-img-top" alt="Transferência">
                     <div class="card-body">
-                        <h5 class="card-title">Transferência</
+                        <h5 class="card-title">Transferência</h5>
+                 </div>   
+            </div>   
+        </div> 
+                 </div>
+        </div>
+    </section>
+
+  
+
+<div class="container my-5">
+    <h1 class="text-center mb-4">Galeria de Imagens</h1>
+    <div class="row g-4">
+        <!-- Item 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="gallery-item">
+                <img src="/Atividade2DevWeb/img/blastcolor.jpg" alt="Imagem 1" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="gallery-item">
+                <img src="/Atividade2DevWeb/img/nanadisco.jpg" alt="Imagem 2" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200?text=Imagem+3" alt="Imagem 3" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200?text=Imagem+4" alt="Imagem 4" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200?text=Imagem+5" alt="Imagem 5" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x200?text=Imagem+6" alt="Imagem 6" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<!-- ====== section contact ====== -->
+<section class="contato" id="contato">
+    <div class="container mt-5"> <!-- container do bootstrap para centralizar o conteúdo -->
+        <h2 class="text-center mb-4">Contato</h2>
+        
+        <form id="contactForm" class="needs-validation" novalidate> <!-- formulário com validação -->
+            <div class="form-group mb-4"> <!-- agrupa os  elementos do formulário -->
+                <label for="name">Nome:</label> <!-- rótulo -->
+                <input type="text" class="form-control" id="name" required> <!-- entrada para o nome -->
+                <div class="invalid-feedback">Por favor, insira seu nome.</div> <!-- mensagem de erro se o campo não for preenchido -->
+            </div>
+            
+            <div class="form-group mb-4"> <!-- agrupamento para o campo de email -->
+                <label for="email">Email:</label> <!-- rótulo  -->
+                <input type="email" class="form-control" id="email" required> <!-- campo de entrada para o email -->
+                <div class="invalid-feedback">Por favor, insira um email válido.</div> <!-- mensagem de erro se o email não for válido -->
+            </div>
+            
+            <div class="form-group mb-4"> <!-- agrupa para  mensagem -->
+                <label for="message">Mensagem:</label> 
+                <textarea class="form-control" id="message" rows="3" required></textarea> <!-- campo de texto para a mensagem -->
+                <div class="invalid-feedback">Por favor, escreva uma mensagem.</div> 
+            </div>
+            
+            <div class="d-grid gap-2"> <!-- Garantindo que o botão ocupe toda a largura disponível -->
+                <button type="submit" class="btn btn-primary btn-lg">Enviar</button> <!-- button para enviar o formulário -->
+            </div>
+        </form>
+    </div>
+    
+    <!-- inclui jQuery e Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        // função de validação do formulário
+        (function () {
+            'use strict' // 'strict mode' para evitar erros comuns
+            var forms = document.querySelectorAll('.needs-validation') // seleciona todos os formulários com a classe 'needs-validation'
+    
+            // itera sobre cada formulário
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    // adiciona um evento ao envio do formulário
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) { // verifica se o formulário é válido
+                            event.preventDefault() // impede o envio se não for válido
+                            event.stopPropagation() // impede a propagação do evento
+                        }
+                        form.classList.add('was-validated') // adiciona a classe 'was-validated' para mostrar os feedbacks
+                    }, false)
+                })
+        })()
+    </script>
+
+    <style>
+        /* Adicionando estilo para o formulário */
+        .container {
+            max-width: 600px; /* Ajuste de largura para que o formulário não fique tão largo */
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control {
+            border-radius: 5px; /* Arredonda as bordas dos inputs */
+        }
+
+        .form-label {
+            font-weight: bold;
+            color: #2c3e50; /* Cor para os rótulos */
+        }
+
+        .btn-primary {
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px; /* Borda arredondada no botão */
+        }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+
+        .invalid-feedback {
+            color: #e74c3c; /* Cor de alerta para mensagens de erro */
+        }
+
+        h2 {
+            color: #2c3e50; /* Cor do título */
+            font-weight: 600;
+        }
+    </style>
+</section>
+<!-- ====== /section contact ====== -->
+
+
+
+
+</body>
+</html>
